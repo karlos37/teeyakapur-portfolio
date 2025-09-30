@@ -101,5 +101,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 Teeya Kapur
-- Email: teeya.kapur@example.com
+- Email: teeya.kapur@utdallas.edu
 - LinkedIn: [linkedin.com/in/teeyakapur](https://linkedin.com/in/teeyakapur)

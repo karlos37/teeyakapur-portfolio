@@ -13,7 +13,7 @@ const Footer = () => {
             <a href="https://linkedin.com/in/teeyakapur" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
-            <a href="mailto:teeya.kapur@example.com">Email</a>
+            <a href="mailto:teeya.kapur@utdallas.edu">Email</a>
             <a href="/Teeya Kapur - PPA Resume.pdf" download>Resume</a>
           </div>
         </div>
