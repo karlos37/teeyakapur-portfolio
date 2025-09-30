@@ -25,9 +25,12 @@ const About = () => {
             </div>
           </div>
           <div className="about-image">
-            <div className="headshot-placeholder">
-              <p>Professional Headshot</p>
-              <small>Add your professional photo here</small>
+            <div className="headshot-container">
+              <img 
+                src="/teeya-headshot.jpg" 
+                alt="Teeya Kapur - Public Policy Analyst" 
+                className="headshot-image"
+              />
             </div>
           </div>
         </div>

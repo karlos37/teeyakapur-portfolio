@@ -144,29 +144,26 @@ section h2::after {
   justify-content: center;
 }
 
-.headshot-placeholder {
+.headshot-container {
   width: 250px;
   height: 250px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  overflow: hidden;
   border: 4px solid #667eea;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.headshot-placeholder p {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #667eea;
-  margin-bottom: 0.5rem;
+.headshot-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
 }
 
-.headshot-placeholder small {
-  color: #888;
-  font-size: 0.9rem;
+.headshot-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Projects Section */
@@ -528,7 +525,7 @@ section h2::after {
     gap: 0.5rem;
   }
   
-  .headshot-placeholder {
+  .headshot-container {
     width: 200px;
     height: 200px;
   }
