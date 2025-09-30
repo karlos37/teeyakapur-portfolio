@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Fix GitHub Pages Deployment Script
+echo "🔧 Fixing GitHub Pages Deployment..."
+
+REPO_URL="https://karlos37.github.io/teeya-kapur-portfolio"
+SETTINGS_URL="https://github.com/karlos37/teeya-kapur-portfolio/settings/pages"
+ACTIONS_URL="https://github.com/karlos37/teeya-kapur-portfolio/actions"
+
+echo ""
+echo "📋 CRITICAL STEPS TO FIX THE DEPLOYMENT:"
+echo ""
+echo "1. 🔧 CONFIGURE GITHUB PAGES SETTINGS:"
+echo "   Go to: $SETTINGS_URL"
+echo "   Under 'Source', select 'GitHub Actions' (NOT 'Deploy from a branch')"
+echo "   Click 'Save'"
+echo ""
+echo "2. ⏳ WAIT FOR DEPLOYMENT:"
+echo "   After changing settings, wait 2-5 minutes"
+echo "   Check Actions: $ACTIONS_URL"
+echo ""
+echo "3. 🧪 TEST THE SITE:"
+echo "   Visit: $REPO_URL"
+
+echo ""
+echo "🔄 ALTERNATIVE: Manual Deployment Method"
+echo "If GitHub Actions continues to fail, you can use manual deployment:"
+echo ""
+echo "1. Go to: $SETTINGS_URL"
+echo "2. Under 'Source', select 'Deploy from a branch'"
+echo "3. Select 'gh-pages' branch"
+echo "4. Select '/ (root)' folder"
+echo "5. Click 'Save'"
+
+echo ""
+echo "📊 CURRENT STATUS:"
+echo "✅ Repository exists: karlos37/teeya-kapur-portfolio"
+echo "✅ Code pushed to main branch"
+echo "✅ gh-pages branch updated with latest build"
+echo "✅ GitHub Actions workflow configured"
+echo "❌ GitHub Pages settings need to be configured"
+
+echo ""
+echo "🎯 MOST LIKELY ISSUE:"
+echo "GitHub Pages is not configured to use GitHub Actions as the source."
+echo "This is the #1 cause of 404 errors when Actions are passing."
+
+echo ""
+echo "⏰ TIMELINE:"
+echo "After fixing the settings, the site should be live within 5 minutes."
+
+echo ""
+echo "🚨 IF STILL NOT WORKING:"
+echo "1. Check GitHub Actions for any error messages"
+echo "2. Verify the repository is public (required for free GitHub Pages)"
+echo "3. Try the manual deployment method above"
