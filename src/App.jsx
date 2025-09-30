@@ -10,10 +10,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div style={{padding: '20px', background: 'red', color: 'white'}}>
-        <h1>DEBUG: React is working!</h1>
-        <p>If you can see this, React is rendering correctly.</p>
-      </div>
       <Header />
       <main>
         <About />

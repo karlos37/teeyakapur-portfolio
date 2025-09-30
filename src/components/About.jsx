@@ -27,7 +27,7 @@ const About = () => {
           <div className="about-image">
             <div className="headshot-container">
               <img 
-                src="src/assets/1750900686263.jpeg"
+                src="/teeya-headshot.jpg"
                 alt="Teeya Kapur - Public Policy Analyst" 
                 className="headshot-image"
               />
