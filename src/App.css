@@ -19,29 +19,30 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
+  width: 100%;
 }
 
 /* Header Styles */
 .header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .nav-brand h1 {
@@ -88,10 +89,10 @@ section h2 {
 section h2::after {
   content: '';
   display: block;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  margin: 1rem auto;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  margin: 1.5rem auto;
   border-radius: 2px;
 }
 
@@ -102,9 +103,11 @@ section h2::after {
 
 .about-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-text h2 {
@@ -125,18 +128,24 @@ section h2::after {
 
 .linkedin-link {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
-  padding: 12px 24px;
+  padding: 14px 28px;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 6px;
   font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .linkedin-link:hover {
+  background: white;
+  color: #2c3e50;
+  border-color: #2c3e50;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.2);
 }
 
 .about-image {
@@ -145,18 +154,19 @@ section h2::after {
 }
 
 .headshot-container {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  border-radius: 8px;
   overflow: hidden;
-  border: 4px solid #667eea;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid #e8ecf0;
+  box-shadow: 0 15px 40px rgba(44, 62, 80, 0.15);
+  transition: all 0.3s ease;
 }
 
 .headshot-container:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(44, 62, 80, 0.25);
+  border-color: #2c3e50;
 }
 
 .headshot-image {
@@ -173,26 +183,30 @@ section h2::after {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-card {
   background: white;
-  border-radius: 15px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 30px rgba(44, 62, 80, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e8ecf0;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(44, 62, 80, 0.2);
+  border-color: #2c3e50;
 }
 
 .project-image {
-  height: 200px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 180px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,8 +277,10 @@ section h2::after {
 .resume-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .resume-preview {
@@ -323,25 +339,30 @@ section h2::after {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
+  border: 2px solid transparent;
 }
 
 .btn-primary:hover {
+  background: white;
+  color: #2c3e50;
+  border-color: #2c3e50;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.2);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #667eea;
-  border: 2px solid #667eea;
+  color: #2c3e50;
+  border: 2px solid #2c3e50;
 }
 
 .btn-secondary:hover {
-  background: #667eea;
+  background: #2c3e50;
   color: white;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.2);
 }
 
 /* Contact Section */
@@ -352,7 +373,9 @@ section h2::after {
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-info h3 {
@@ -515,7 +538,7 @@ section h2::after {
   }
   
   .container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 }
 

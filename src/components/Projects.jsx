@@ -4,24 +4,24 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Policy Research Project 1",
-      description: "Comprehensive analysis of social welfare policies and their impact on community outcomes.",
+      title: "Financial Policy Analysis",
+      description: "Comprehensive analysis of fiscal policies and their economic impact on public sector budgeting and resource allocation.",
       image: "/project1.jpg",
-      technologies: ["Policy Analysis", "Data Research", "Stakeholder Engagement"]
+      technologies: ["Policy Analysis", "Financial Modeling", "Budget Analysis"]
     },
     {
       id: 2,
-      title: "Data Analysis Study",
-      description: "Statistical analysis of public health data to inform policy recommendations.",
+      title: "Economic Data Research",
+      description: "Statistical analysis of economic indicators and public finance data to inform evidence-based policy recommendations.",
       image: "/project2.jpg",
-      technologies: ["Statistical Analysis", "Data Visualization", "Policy Recommendations"]
+      technologies: ["Statistical Analysis", "Data Visualization", "Economic Research"]
     },
     {
       id: 3,
-      title: "Community Impact Assessment",
-      description: "Evaluation of community programs and their effectiveness in achieving policy goals.",
+      title: "Program Cost-Benefit Analysis",
+      description: "Evaluation of government programs and their cost-effectiveness in achieving policy objectives and fiscal responsibility.",
       image: "/project3.jpg",
-      technologies: ["Program Evaluation", "Community Research", "Impact Assessment"]
+      technologies: ["Cost-Benefit Analysis", "Program Evaluation", "Financial Assessment"]
     }
   ];
 
