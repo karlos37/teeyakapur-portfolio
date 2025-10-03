@@ -5,19 +5,23 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ParticleBackground from './components/ParticleBackground';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main>
-        <About />
-        <Projects />
-        <Resume />
-        <Contact />
-      </main>
-      <Footer />
+      <ParticleBackground />
+      <div className="content-wrapper">
+        <Header />
+        <main>
+          <About />
+          <Projects />
+          <Resume />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
