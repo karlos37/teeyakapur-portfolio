@@ -1,4 +1,5 @@
 import React from 'react';
+import headshotImage from '../assets/1750900686263.jpeg';
 
 const About = () => {
   return (
@@ -27,7 +28,7 @@ const About = () => {
           <div className="about-image">
             <div className="headshot-container">
               <img 
-                src="src/assets/1750900686263.jpeg"
+                src={headshotImage}
                 alt="Teeya Kapur - Public Policy Analyst" 
                 className="headshot-image"
               />
