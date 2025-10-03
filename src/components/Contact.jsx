@@ -20,12 +20,10 @@ const Contact = () => {
 
         // Create mailto link with form data
         const subject = encodeURIComponent(`Contact from ${formData.name}`);
-        const body = encodeURIComponent(
-            `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-        );
+        const body = encodeURIComponent(`Hi Teeya,\n\n${formData.message}`);
 
         // Open default email client
-        window.location.href = `mailto:txk220044@utdallas.edu?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:teeya.kapur@utdallas.edu?subject=${subject}&body=${body}`;
 
         // Reset form
         setFormData({
@@ -49,8 +47,8 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <strong>Email:</strong>
-                  <a href="mailto:txk220044@utdallas.edu" className="contact-link">
-                      txk220044@utdallas.edu
+                  <a href="mailto:teeya.kapur@utdallas.edu" className="contact-link">
+                      teeya.kapur@utdallas.edu
                   </a>
               </div>
                 <div className="contact-item">
@@ -59,10 +57,6 @@ const Contact = () => {
                         682.521.4437
                     </a>
                 </div>
-                <div className="contact-item">
-                    <strong>Location:</strong>
-                    <span>Richardson, Texas</span>
-              </div>
               <div className="contact-item">
                 <strong>LinkedIn:</strong>
                   <a href="https://linkedin.com/in/teeyakapur" target="_blank" rel="noopener noreferrer"

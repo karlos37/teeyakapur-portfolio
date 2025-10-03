@@ -1023,7 +1023,7 @@ section h2::after {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(20px);
   color: #e8e8e8;
-  padding: 2rem 0 1rem;
+  padding: 3rem 2rem 1rem;
   margin-top: auto;
   border-top: 1px solid rgba(74, 158, 255, 0.2);
 }
@@ -1032,16 +1032,22 @@ section h2::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-info h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .footer-info p {
   opacity: 0.8;
+  color: rgba(232, 232, 232, 0.8);
 }
 
 .footer-links {
@@ -1049,21 +1055,39 @@ section h2::after {
   gap: 2rem;
 }
 
-.footer-links a {
-  color: white;
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e8e8e8;
   text-decoration: none;
-  transition: opacity 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(74, 158, 255, 0.3);
+  background: rgba(74, 158, 255, 0.1);
 }
 
-.footer-links a:hover {
-  opacity: 0.8;
+.footer-link:hover {
+  background: rgba(74, 158, 255, 0.2);
+  border-color: rgba(74, 158, 255, 0.5);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.footer-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 1rem;
-  border-top: 1px solid #34495e;
+  border-top: 1px solid rgba(74, 158, 255, 0.2);
   opacity: 0.8;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Responsive Design */
@@ -1126,6 +1150,11 @@ section h2::after {
   
   .footer-links {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    padding: 2rem 1rem 1rem;
   }
   
   section h2 {
