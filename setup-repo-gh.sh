@@ -21,7 +21,7 @@ fi
 echo "📦 Creating repository on GitHub..."
 gh repo create karlos37/teeya-kapur-portfolio \
     --public \
-    --description "Professional portfolio website for Teeya Kapur - Public Policy Analyst" \
+    --description "Professional portfolio website for Teeya Kapur - Accounting Student & Financial Professional" \
     --source=. \
     --remote=origin \
     --push

@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="footer-content">
             <div className="footer-info">
                 <h3>Teeya Kapur</h3>
-                <p>Public Policy Analyst & Researcher</p>
+                <p>Accounting Student & Financial Professional</p>
             </div>
             <div className="footer-links">
                 <a href="https://linkedin.com/in/teeyakapur" target="_blank" rel="noopener noreferrer"

@@ -1,6 +1,7 @@
 # Teeya Kapur - Professional Portfolio
 
-A modern, responsive portfolio website built with React and Vite, showcasing Teeya Kapur's work as a Public Policy Analyst and Researcher.
+A modern, responsive portfolio website built with React and Vite, showcasing Teeya Kapur's work as an Accounting Student
+and Financial Professional.
 
 ## Features
 
