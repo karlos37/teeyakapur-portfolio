@@ -536,6 +536,364 @@ section h2::after {
   box-shadow: 0 8px 25px rgba(74, 158, 255, 0.4);
 }
 
+/* Education Section */
+.education-section {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  margin: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.education-content {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.education-item {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(74, 158, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(74, 158, 255, 0.2);
+  border-color: rgba(74, 158, 255, 0.4);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.education-header h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+}
+
+.education-date {
+  background: linear-gradient(135deg, #4a9eff 0%, #7b68ee 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.3);
+}
+
+.education-details {
+  margin-bottom: 2rem;
+}
+
+.education-details p {
+  color: rgba(232, 232, 232, 0.9);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.degree {
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+.gpa {
+  color: rgba(74, 158, 255, 0.9) !important;
+  font-weight: 600;
+}
+
+.certification {
+  color: rgba(123, 104, 238, 0.9) !important;
+  font-weight: 600;
+}
+
+.achievements h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  color: rgba(232, 232, 232, 0.8);
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.achievements li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: rgba(74, 158, 255, 0.8);
+  font-weight: bold;
+}
+
+/* Experience Section */
+.experience-section {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  margin: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.experience-content {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-item {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(74, 158, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(74, 158, 255, 0.2);
+  border-color: rgba(74, 158, 255, 0.4);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-title h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.company {
+  color: rgba(74, 158, 255, 0.9);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+
+.location {
+  color: rgba(232, 232, 232, 0.7);
+  font-size: 0.9rem;
+}
+
+.duration {
+  background: linear-gradient(135deg, #4a9eff 0%, #7b68ee 100%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.3);
+}
+
+.experience-responsibilities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-responsibilities li {
+  color: rgba(232, 232, 232, 0.8);
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.experience-responsibilities li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: rgba(74, 158, 255, 0.8);
+  font-size: 0.8rem;
+}
+
+/* Organizations Section */
+.organizations-section {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  margin: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.organizations-content {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.organizations-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.organization-item {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(74, 158, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.organization-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(74, 158, 255, 0.2);
+  border-color: rgba(74, 158, 255, 0.4);
+}
+
+.organization-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.organization-header h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+
+.role {
+  background: linear-gradient(135deg, #4a9eff 0%, #7b68ee 100%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.3);
+  white-space: nowrap;
+}
+
+.organization-meta {
+  margin-bottom: 1rem;
+}
+
+.organization-meta .duration {
+  background: rgba(74, 158, 255, 0.2);
+  color: rgba(232, 232, 232, 0.8);
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.organization-description {
+  color: rgba(232, 232, 232, 0.8);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.competitions-section {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(74, 158, 255, 0.2);
+}
+
+.competitions-section h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.competition-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid rgba(74, 158, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.competition-item:hover {
+  border-color: rgba(74, 158, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.competition-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.competition-header h4 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.competition-header .duration {
+  background: linear-gradient(135deg, #7b68ee 0%, #4a9eff 100%);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  box-shadow: 0 4px 15px rgba(123, 104, 238, 0.3);
+}
+
+.competition-achievement {
+  color: rgba(232, 232, 232, 0.8);
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
 /* Contact Section */
 .contact-section {
   background: rgba(0, 0, 0, 0.2);
@@ -591,6 +949,22 @@ section h2::after {
 
 .contact-item a:hover {
   text-decoration: underline;
+}
+
+.contact-link {
+  color: rgba(74, 158, 255, 0.9) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.contact-link:hover {
+  color: rgba(74, 158, 255, 1) !important;
+  background: rgba(74, 158, 255, 0.1);
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
 /* Form Styles */
@@ -733,6 +1107,11 @@ section h2::after {
     gap: 2rem;
     padding: 0 1rem;
   }
+
+  .organizations-list {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
   
   .projects-grid {
     grid-template-columns: 1fr;
@@ -758,7 +1137,10 @@ section h2::after {
   }
   
   .about-section,
+  .education-section,
+  .experience-section,
   .projects-section,
+  .organizations-section,
   .resume-section,
   .contact-section {
     margin: 1rem;
@@ -825,7 +1207,10 @@ section h2::after {
   }
   
   .about-section,
+  .education-section,
+  .experience-section,
   .projects-section,
+  .organizations-section,
   .resume-section,
   .contact-section {
     margin: 0.5rem;

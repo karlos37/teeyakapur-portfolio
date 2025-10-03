@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
 
 const ParticleBackground = () => {
   const canvasRef = useRef(null);
@@ -26,9 +26,10 @@ const ParticleBackground = () => {
         this.y = Math.random() * canvas.height;
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
-        this.size = Math.random() * 2 + 1;
-        this.opacity = Math.random() * 0.5 + 0.2;
+          this.size = Math.random() * 2 + 1.5; // Slightly smaller but still visible
+          this.opacity = Math.random() * 0.2 + 0.9; // Much brighter
         this.pulse = Math.random() * Math.PI * 2;
+          this.clickBoost = 0; // For click brightness effect
       }
 
       update() {
@@ -42,17 +43,32 @@ const ParticleBackground = () => {
         if (this.y < 0) this.y = canvas.height;
         if (this.y > canvas.height) this.y = 0;
 
-        // Pulsing opacity
-        this.opacity = 0.2 + Math.sin(this.pulse) * 0.3;
+          // Decay click boost over time
+          if (this.clickBoost > 0) {
+              this.clickBoost -= 0.02;
+          }
+
+          // Pulsing opacity with click boost
+          this.opacity = 0.7 + Math.sin(this.pulse) * 0.2 + this.clickBoost; // Maximum brightness
       }
 
       draw() {
         ctx.save();
         ctx.globalAlpha = this.opacity;
+
+          // Create bright, visible particles
         ctx.fillStyle = '#4a9eff';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
+
+          // Add bright white center for visibility
+          ctx.fillStyle = '#ffffff';
+          ctx.globalAlpha = this.opacity * 0.8;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size * 0.5, 0, Math.PI * 2);
+          ctx.fill();
+        
         ctx.restore();
       }
     }
@@ -72,7 +88,34 @@ const ParticleBackground = () => {
       mouse.y = e.clientY;
     };
 
+      // Click interaction
+      const handleClick = (e) => {
+          const clickX = e.clientX;
+          const clickY = e.clientY;
+
+          // Find particles near click and make them bounce
+          particles.forEach(particle => {
+              const dx = particle.x - clickX;
+              const dy = particle.y - clickY;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < 100) {
+                  // Calculate bounce direction
+                  const force = (100 - distance) / 100 * 6; // Much stronger force
+                  const angle = Math.atan2(dy, dx);
+
+                  // Apply bounce force
+                  particle.vx += Math.cos(angle) * force;
+                  particle.vy += Math.sin(angle) * force;
+
+                  // Add temporary brightness boost
+                  particle.clickBoost = 0.5;
+              }
+          });
+      };
+
     window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('click', handleClick);
 
     // Animation loop
     const animate = () => {
@@ -89,11 +132,11 @@ const ParticleBackground = () => {
           const dy = particle.y - particles[j].y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 100) {
+            if (distance < 120) {
             ctx.save();
-            ctx.globalAlpha = (100 - distance) / 100 * 0.1;
-            ctx.strokeStyle = '#7b68ee';
-            ctx.lineWidth = 0.5;
+                ctx.globalAlpha = (120 - distance) / 120 * 0.25; // More visible
+                ctx.strokeStyle = '#4a9eff';
+                ctx.lineWidth = 0.8; // Thicker lines
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(particles[j].x, particles[j].y);
@@ -107,11 +150,13 @@ const ParticleBackground = () => {
         const dy = particle.y - mouse.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
 
-        if (distance < 150) {
+          if (distance < 200) {
           ctx.save();
-          ctx.globalAlpha = (150 - distance) / 150 * 0.2;
-          ctx.strokeStyle = '#4a9eff';
-          ctx.lineWidth = 1;
+              ctx.globalAlpha = (200 - distance) / 200 * 0.4; // Less visible
+              ctx.strokeStyle = '#7b68ee';
+              ctx.lineWidth = 1.2; // Thinner lines
+              ctx.shadowColor = '#7b68ee';
+              ctx.shadowBlur = 2;
           ctx.beginPath();
           ctx.moveTo(particle.x, particle.y);
           ctx.lineTo(mouse.x, mouse.y);
@@ -129,6 +174,7 @@ const ParticleBackground = () => {
     return () => {
       window.removeEventListener('resize', resizeCanvas);
       window.removeEventListener('mousemove', handleMouseMove);
+        window.removeEventListener('click', handleClick);
       cancelAnimationFrame(animationId);
     };
   }, []);
