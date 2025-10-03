@@ -9,15 +9,17 @@ const About = () => {
           <div className="about-text">
             <h2>About Me</h2>
             <p>
-              I am a dedicated Public Policy Analyst with a passion for research, data analysis, 
-              and evidence-based policy making. My work focuses on understanding complex social 
-              issues and developing innovative solutions that can make a meaningful impact on society.
+                I am a dedicated accounting student at The University of Texas at Dallas, pursuing a Bachelor of Science
+                in Accounting with a 3.91 GPA and working towards my Master of Science in Accounting and Analytics.
+                As a Texas CPA candidate, I am passionate about financial analysis, audit processes, and ensuring
+                accuracy in financial reporting.
             </p>
             <p>
-              With expertise in policy research, data analysis, and stakeholder engagement, 
-              I am committed to bridging the gap between research and practical policy implementation. 
-              I believe in the power of data-driven decision making and collaborative approaches 
-              to address contemporary challenges.
+                Currently serving as a Student Assistant at UT Dallas Central Business Office, I have gained hands-on
+                experience in financial auditing, procurement processes, and expense management. My expertise includes
+                QuickBooks Online ProAdvisor Certification, Advanced MS Excel, and Microsoft Dynamics GP. I am committed
+                to maintaining the highest standards of financial integrity and contributing to organizational success
+                through meticulous attention to detail and analytical thinking.
             </p>
             <div className="about-links">
               <a href="https://linkedin.com/in/teeyakapur" target="_blank" rel="noopener noreferrer" className="linkedin-link">
@@ -29,7 +31,7 @@ const About = () => {
             <div className="headshot-container">
               <img 
                 src={headshotImage}
-                alt="Teeya Kapur - Public Policy Analyst" 
+                alt="Teeya Kapur - Accounting Student & Financial Professional" 
                 className="headshot-image"
               />
             </div>

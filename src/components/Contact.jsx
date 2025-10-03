@@ -9,13 +9,21 @@ const Contact = () => {
           <div className="contact-info">
             <h3>Let's Connect</h3>
             <p>
-              I'm always interested in discussing policy research opportunities, 
-              collaborative projects, or new ideas in public policy and social impact.
+                I'm always interested in discussing accounting opportunities,
+                internships, or collaborative projects in finance and business analytics.
             </p>
             <div className="contact-details">
               <div className="contact-item">
                 <strong>Email:</strong>
-                <a href="mailto:teeya.kapur@utdallas.edu">teeya.kapur@utdallas.edu</a>
+                  <a href="mailto:txk220044@utdallas.edu">txk220044@utdallas.edu</a>
+              </div>
+                <div className="contact-item">
+                    <strong>Phone:</strong>
+                    <a href="tel:6825214437">682.521.4437</a>
+                </div>
+                <div className="contact-item">
+                    <strong>Location:</strong>
+                    <span>Richardson, Texas</span>
               </div>
               <div className="contact-item">
                 <strong>LinkedIn:</strong>

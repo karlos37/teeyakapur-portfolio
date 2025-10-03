@@ -4,24 +4,24 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Financial Policy Analysis",
-      description: "Comprehensive analysis of fiscal policies and their economic impact on public sector budgeting and resource allocation.",
+        title: "University Financial Operations",
+        description: "Managed faculty requisitions and purchase orders, audited travel expenses, and coordinated with multiple departments to streamline procurement processes, reducing errors by 15%.",
       image: "/project1.jpg",
-      technologies: ["Policy Analysis", "Financial Modeling", "Budget Analysis"]
+        technologies: ["Financial Auditing", "Procurement Management", "Process Improvement"]
     },
     {
       id: 2,
-      title: "Economic Data Research",
-      description: "Statistical analysis of economic indicators and public finance data to inform evidence-based policy recommendations.",
+        title: "Client Account Reconciliation",
+        description: "Prepared and reconciled monthly bank statements for 15+ client accounts with 100% accuracy, collaborating with senior accountants to reconcile $29M+ worth of transactions.",
       image: "/project2.jpg",
-      technologies: ["Statistical Analysis", "Data Visualization", "Economic Research"]
+        technologies: ["Bank Reconciliation", "Financial Analysis", "Microsoft Dynamics GP"]
     },
     {
       id: 3,
-      title: "Program Cost-Benefit Analysis",
-      description: "Evaluation of government programs and their cost-effectiveness in achieving policy objectives and fiscal responsibility.",
+        title: "Student Organization Leadership",
+        description: "Launched and managed the first JSOM scholarship program for international students, leading a fundraising campaign that raised over $10,000 in one semester.",
       image: "/project3.jpg",
-      technologies: ["Cost-Benefit Analysis", "Program Evaluation", "Financial Assessment"]
+        technologies: ["Leadership", "Fundraising", "Program Development"]
     }
   ];
 

@@ -61,6 +61,8 @@ body {
   align-items: center;
   width: 100%;
   padding: 0 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .nav-brand h1 {
@@ -78,6 +80,9 @@ body {
   display: flex;
   list-style: none;
   gap: 2rem;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
 }
 
 .nav-links a {
@@ -87,6 +92,8 @@ body {
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
   border-radius: 8px;
+    white-space: nowrap;
+    display: block;
 }
 
 .nav-links a:hover {
@@ -686,6 +693,26 @@ section h2::after {
 }
 
 /* Responsive Design */
+@media (min-width: 1400px) {
+    .nav {
+        padding: 0 3rem;
+    }
+
+    .nav-links {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        padding: 0 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -695,6 +722,8 @@ section h2::after {
   
   .nav-links {
     gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
   }
   
   .about-content,
