@@ -1119,9 +1119,33 @@ section h2::after {
   }
   
   .nav-links {
-    gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .header {
+    padding: 2rem 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .header-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
   }
   
   .about-content,
@@ -1140,6 +1164,7 @@ section h2::after {
   .projects-grid {
     grid-template-columns: 1fr;
     padding: 0 1rem;
+    gap: 1.5rem;
   }
   
   .footer-content {
@@ -1156,9 +1181,14 @@ section h2::after {
   .footer {
     padding: 2rem 1rem 1rem;
   }
+
+  section {
+    padding: 3rem 0;
+  }
   
   section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
   
   .container {
@@ -1172,13 +1202,53 @@ section h2::after {
   .organizations-section,
   .resume-section,
   .contact-section {
-    margin: 1rem;
+    margin: 0.5rem;
     border-radius: 1rem;
+    padding: 2rem 0;
   }
   
   .headshot-container {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .project-card {
+    margin-bottom: 1rem;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 0.9rem;
   }
 }
 
@@ -1187,22 +1257,99 @@ section h2::after {
     flex-direction: column;
     gap: 0.5rem;
   }
+
+  .nav-links a {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .header {
+    padding: 1.5rem 0;
+  }
+
+  .header-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-section,
+  .education-section,
+  .experience-section,
+  .projects-section,
+  .organizations-section,
+  .resume-section,
+  .contact-section {
+    margin: 0.3rem;
+    padding: 1.5rem 0;
+    border-radius: 0.5rem;
+  }
   
   .headshot-container {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+
+  .footer-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
   }
   
   .resume-container {
-    max-width: 600px;
+    max-width: 500px;
   }
   
   .pdf-iframe-default {
-    height: 750px;
+    height: 650px;
   }
   
   .pdf-default-preview {
-    min-height: 750px;
+    min-height: 650px;
   }
   
   .overlay-icon {
@@ -1218,21 +1365,38 @@ section h2::after {
     width: 95%;
     height: 95%;
   }
-  
-  .resume-container {
-    max-width: 500px;
+}
+
+/* Extra small screens - fix overlapping text issues */
+@media (max-width: 360px) {
+  .nav-links {
+    gap: 0.3rem;
   }
-  
-  .pdf-iframe-default {
-    height: 650px;
+
+  .nav-links a {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
   }
-  
-  .pdf-default-preview {
-    min-height: 650px;
+
+  .header {
+    padding: 1rem 0;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text p {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 1.5rem 0;
   }
   
   section h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
   
   .about-section,
@@ -1242,7 +1406,54 @@ section h2::after {
   .organizations-section,
   .resume-section,
   .contact-section {
-    margin: 0.5rem;
-    border-radius: 0.5rem;
+    margin: 0.2rem;
+    padding: 1rem 0;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-text p {
+    font-size: 0.85rem;
+  }
+
+  .project-content {
+    padding: 0.8rem;
+  }
+
+  .project-content h3 {
+    font-size: 1rem;
+  }
+
+  .project-content p {
+    font-size: 0.8rem;
+  }
+
+  .contact-form {
+    padding: 0.8rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    padding: 1rem 0.5rem 0.5rem;
+  }
+
+  .footer-links {
+    gap: 0.8rem;
+  }
+
+  .footer-link {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
   }
 }
